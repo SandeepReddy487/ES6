@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aceending</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    function sortAceending(arr){
+      for(let i=0;i<arr.length;i++){
+        for(let j=i;j<arr.length;j++){
+          if(arr[i]<arr[j]){
+            let temp =arr[i]
+            arr[i]=arr[j]
+            arr[j] =temp
+          }
+        }
+      }
+      return arr;
+
+    }
+    // console.log(sortAceending([10,9,1000,12,-11,3]));
+document.getElementById("demo").innerHTML = (sortAceending([101,97,9000,12,-19,3]))
+  </script>
+</body>
+</html>

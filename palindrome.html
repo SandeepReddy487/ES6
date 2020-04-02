@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrom</title>
+    <style> 
+        #form{
+            text-align: center; }
+            input {padding: 15px;}
+        </style>
+</head>
+<body>
+    <form id="form">
+        <input type="text" name="" id="number">
+        <input type="submit" value="check">
+        <p id="result"></p>
+        </form>
+    <script>
+        var frm = document.getElementById("form");
+             frm.onsubmit = function(){
+                 var user = document.getElementById("number").value;
+                 var view = document.getElementById("result");
+                 var store = user;
+                 var rev = 0;
+                 while (store!=0){
+                     rev = (rev*10)+(store%10)
+                     store = parseInt(store/10);
+                 }
+                 if(user == rev){
+                     result.innerHTML = "this palindrome"
+                     return false;
+                 }
+                 else{
+                     result.innerHTML = "this is not palindrome"
+                     return false;
+                 }
+             }
+
+    </script>
+</body>
+</html>

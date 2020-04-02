@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var array = [5,34,63,87,125,999]
+        var largest = array[0];
+        for(var i=0;i<array.length;i++){
+            if(largest<array[i]){
+                largest = array[i]
+            }
+        }
+        // console.log(largest);
+document.getElementById("demo").innerHTML = largest
+    </script>
+</body>
+</html>
